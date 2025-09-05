@@ -16,11 +16,11 @@ jobs:
           node-version: '20'
           cache: 'npm'
       - name: Install root deps
-        run: npm ci
+        run: npm install
       - name: Build Next.js app
         run: |
           cd app
-          npm ci
+          npm install
           npm run build
       - name: Lint placeholder
         run: npm run lint --if-present
