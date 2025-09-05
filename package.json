@@ -1,0 +1,31 @@
+{
+  "name": "neon-mortgage-extracted",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Neon Mortgage - extracted mortgage-only backend and Next.js app",
+  "main": "index.js",
+  "scripts": {
+    "dev": "NODE_ENV=development node index.js",
+    "start": "NODE_ENV=production node index.js",
+    "build": "cd app && npm ci && npm run build",
+    "lint": "echo 'no lint'",
+    "health": "curl http://localhost:%PORT%/health"
+  },
+  "dependencies": {
+    "axios": "^1.9.0",
+    "bcrypt": "^6.0.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.20.0",
+    "express-rate-limit": "^7.1.5",
+    "helmet": "^7.1.0",
+    "json2csv": "^6.0.0-alpha.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.6.1",
+    "nodemailer": "^6.9.15"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
